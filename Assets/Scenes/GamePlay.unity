@@ -4280,8 +4280,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2117753290}
-  m_RootOrder: 0
+  m_Father: {fileID: 2060454611}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1869113813
 MonoBehaviour:
@@ -4297,7 +4297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2117753290}
   speed: 4
-  swayAmount: 1
+  swayAmount: 0.2
   swaySpeed: 1
 --- !u!135 &1869113814
 SphereCollider:
@@ -4307,7 +4307,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869113811}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -5143,7 +5143,7 @@ PrefabInstance:
     - target: {fileID: 2784989338518783092, guid: 93807ab5e5fdab540a039cdd46756e3a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2784989338518783092, guid: 93807ab5e5fdab540a039cdd46756e3a,
         type: 3}
@@ -5563,8 +5563,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1869113812}
+  m_Children: []
   m_Father: {fileID: 1949398417}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
