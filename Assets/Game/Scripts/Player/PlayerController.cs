@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private VariableJoystick joystick;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float moveSpeed;
+    [SerializeField] private float rotationSpeed = 5;
     [SerializeField]
     private Vector3 direction = Vector3.zero;
 
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         var horizontal = joystick.Horizontal;
         var vertical = joystick.Vertical;
-        transform.rotation = Quaternion.Euler(0,Mathf.Atan2(horizontal,vertical) * Mathf.Rad2Deg, 0);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0,Mathf.Atan2(horizontal,vertical) * Mathf.Rad2Deg, 0), Time.deltaTime * rotationSpeed);
     }
 
     #endregion
