@@ -36,9 +36,14 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion
-    
-    #region Rotation
 
+    #region Move
+
+    private void Move()
+    {
+        rb.velocity = transform.forward * moveSpeed;
+    }
+    
     private void Rotation()
     {
         var horizontal = joystick.Horizontal;
@@ -48,12 +53,6 @@ public class PlayerController : MonoBehaviour
 
     #endregion
     
-    #region Move
 
-    private void Move()
-    {
-        rb.velocity = transform.forward * moveSpeed;
-    }
-
-    #endregion
+    
 }

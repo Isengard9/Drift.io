@@ -26,6 +26,8 @@ public class PlatformController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!GameManager.isGameStarted || GameManager.isGameEnded) return;
+        
         ControlTimer();
     }
 
@@ -48,8 +50,6 @@ public class PlatformController : MonoBehaviour
 
     private void ControlTimer()
     {
-        if (!GameManager.isGameStarted || GameManager.isGameEnded) return;
-        
         if (_timer <= 0)
         {
             LosePart();
