@@ -3045,6 +3045,7 @@ GameObject:
   - component: {fileID: 7114289008139235783}
   - component: {fileID: 7114289008139235782}
   - component: {fileID: 7114289008139235777}
+  - component: {fileID: 7385493216164678271}
   m_Layer: 0
   m_Name: EnemyController
   m_TagString: Player
@@ -3124,6 +3125,22 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 187a53baf9d351e418c2804b8c55d3d9, type: 2}
   - {fileID: 2100000, guid: a603247a260193e4aa0f3ff75361a62a, type: 2}
   - {fileID: 2100000, guid: 73dd23b3db68aa1449d42eecf53ff4f9, type: 2}
+--- !u!114 &7385493216164678271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7114289008139235779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d532b4705140fea9d4e1c8f3e41992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleRigidbody: {fileID: 7114289008139235783}
+  minDistanceFromTarget: 10
+  movementSpeed: 5
+  rotateSpeed: 1
 --- !u!1 &7168373562698645191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,6 +3969,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 7114289006837296711}
+    - target: {fileID: 681709278300313522, guid: 93807ab5e5fdab540a039cdd46756e3a,
+        type: 3}
+      propertyPath: smoothSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2784989338518783092, guid: 93807ab5e5fdab540a039cdd46756e3a,
         type: 3}
       propertyPath: m_RootOrder

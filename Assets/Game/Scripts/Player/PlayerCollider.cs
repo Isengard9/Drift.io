@@ -17,8 +17,7 @@ public class PlayerCollider : MonoBehaviour
     {
         if (other.transform.CompareTag("Item"))
         {
-            Debug.Log("player kutuya değdi");
-            playerController.ballController.RotateTarget();
+            playerController.ballController.RotateAroundVehicle();
             other.GetComponent<PowerUpItem>().DestroyAction();
         }
     }

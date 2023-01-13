@@ -26,7 +26,7 @@ public class PlatformController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!GameManager.isGameStarted || GameManager.isGameEnded) return;
+        if (!GameManager.IsGameStarted || GameManager.IsGameEnded) return;
         
         ControlTimer();
     }

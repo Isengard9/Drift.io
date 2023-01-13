@@ -12,7 +12,7 @@ public class BallController : MonoBehaviour
 
     public Transform target;
     public float smoothSpeed = 0.125f;
-
+    private float defaultSmoothSpeed;
     public LineRenderer Rope;
     public Transform BallTransform;
 
@@ -21,7 +21,7 @@ public class BallController : MonoBehaviour
     private Vector3 offsetTargetPosition;
 
     private bool isRotating = false;
-
+    public Rigidbody rb;
     #endregion
 
     #region MonoBehaviour
@@ -29,6 +29,7 @@ public class BallController : MonoBehaviour
     private void Awake()
     {
         SetBallTransform();
+        defaultSmoothSpeed = smoothSpeed;
     }
 
     void Start()
@@ -38,9 +39,14 @@ public class BallController : MonoBehaviour
     
     void FixedUpdate()
     {
-
+        transform.position = Vector3.Slerp(transform.position, target.position + offsetTargetPosition, smoothSpeed* Time.fixedDeltaTime);
+        rb.angularVelocity += target.transform.eulerAngles * Time.fixedDeltaTime;
+        rb.angularVelocity = Vector3.Lerp(rb.velocity, Vector3.zero, Time.fixedDeltaTime * smoothSpeed);
+        rb.angularVelocity = Vector3.ClampMagnitude(rb.angularVelocity, 2);
+        transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, smoothSpeed* Time.fixedDeltaTime);
+        return;
         var angle = Quaternion.Angle(transform.rotation, target.rotation);
-        smoothSpeed = isRotating ? Mathf.Clamp(angle, 5, 100) : 5;
+        smoothSpeed = isRotating ? Mathf.Clamp(angle, 5, 100) : defaultSmoothSpeed;
         
         
         transform.position = Vector3.Slerp(transform.position, target.position + offsetTargetPosition, smoothSpeed* Time.fixedDeltaTime);
@@ -55,7 +61,7 @@ public class BallController : MonoBehaviour
 
     #region RotateTarget
 
-    public void RotateTarget()
+    public void RotateAroundVehicle()
     {
         if(isRotating)
             return;
@@ -91,4 +97,8 @@ public class BallController : MonoBehaviour
 
     #endregion
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.name);
+    }
 }

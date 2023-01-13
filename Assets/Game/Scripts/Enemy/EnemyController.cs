@@ -30,15 +30,6 @@ public class EnemyController : MonoBehaviour, IDestroyable
 
     #endregion
 
-    #region Move
-
-    private void Move()
-    {
-        
-    }
-
-    #endregion
-
     #region SetMaterials
 
     private void SetCarColor()

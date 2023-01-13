@@ -21,7 +21,7 @@ public class PowerUpController : MonoBehaviour
 
     private void Update()
     {
-        if (!GameManager.isGameStarted || GameManager.isGameEnded) return;
+        if (!GameManager.IsGameStarted || GameManager.IsGameEnded) return;
         
         CreationProcess();
     }
