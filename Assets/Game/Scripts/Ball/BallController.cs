@@ -21,15 +21,7 @@ public class BallController : MonoBehaviour
         offsetTargetPosition = target.position - transform.position;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-         RotateTarget();
-        }
-    }
-
-    private void RotateTarget()
+    public void RotateTarget()
     {
         if(isRotating)
             return;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Game.Scripts.Interface;
 using UnityEngine;
 
@@ -28,18 +29,30 @@ public class PowerUpItem : MonoBehaviour, IDestroyable
         {
             //Debug.Log("kutu yere degdi");
             rb.isKinematic = true;
-            parachute.SetActive(false);
+            ScaleDownParachute();
         }
     }
 
     #endregion
 
+    #region Parachute
+
+    private void ScaleDownParachute()
+    {
+        parachute.transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 1)
+            .OnComplete((() =>
+            {
+                parachute.SetActive(false);
+            }));
+    }
+
+    #endregion
 
     #region DestroyAction
 
     public void DestroyAction()
     {
-        
+        Destroy(gameObject, 0.1f);
     }
 
     #endregion

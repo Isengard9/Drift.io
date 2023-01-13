@@ -533,7 +533,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43660165}
-  m_LocalRotation: {x: 0.34078074, y: 1.7763568e-15, z: -5.2214653e-23, w: 0.9401428}
+  m_LocalRotation: {x: 0.3407807, y: -0.000000028018441, z: 0.000000010156057, w: 0.9401428}
   m_LocalPosition: {x: 0, y: 21.7, z: -56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4553,7 +4553,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725457016}
-  m_LocalRotation: {x: 0.34078074, y: 1.7763568e-15, z: -5.2214653e-23, w: 0.9401428}
+  m_LocalRotation: {x: 0.3407807, y: -0.000000028018441, z: 0.000000010156057, w: 0.9401428}
   m_LocalPosition: {x: 0, y: 21.7, z: -56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4936,6 +4936,7 @@ GameObject:
   - component: {fileID: 1949398418}
   - component: {fileID: 1949398424}
   - component: {fileID: 1949398423}
+  - component: {fileID: 1949398425}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Player
@@ -4988,6 +4989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3114f56bb140e4169b552b5444b4bc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballController: {fileID: 837924753}
   joystick: {fileID: 1957236155}
   rb: {fileID: 1949398418}
   moveSpeed: 10
@@ -5005,7 +5007,19 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3, y: 3, z: 5}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Center: {x: 0, y: 1.5, z: 2.5}
+--- !u!114 &1949398425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949398416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9bfc5d4c3fe4b6f881b356f93d907e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1957236154
 PrefabInstance:
   m_ObjectHideFlags: 0

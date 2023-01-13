@@ -8,12 +8,13 @@ public class PlayerController : MonoBehaviour
 
     #region Variables
 
+    public BallController ballController;
+    
     [SerializeField] private VariableJoystick joystick;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float rotationSpeed = 5;
-    [SerializeField]
-    private Vector3 direction = Vector3.zero;
+    [SerializeField] private Vector3 direction = Vector3.zero;
 
     #endregion
 

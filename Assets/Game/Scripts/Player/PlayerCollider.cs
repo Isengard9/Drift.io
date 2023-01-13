@@ -17,8 +17,9 @@ public class PlayerCollider : MonoBehaviour
     {
         if (other.transform.CompareTag("Item"))
         {
-            //topu hızlandır
-            //kutuyu yok et
+            Debug.Log("player kutuya değdi");
+            playerController.ballController.RotateTarget();
+            other.GetComponent<PowerUpItem>().DestroyAction();
         }
     }
 }
