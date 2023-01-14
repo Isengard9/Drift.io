@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1588454770016335675}
   - component: {fileID: 1588454770016335673}
   - component: {fileID: 1588454770016335674}
+  - component: {fileID: 3405703308461792806}
   m_Layer: 0
   m_Name: WreckingBall
   m_TagString: Untagged
@@ -235,6 +236,24 @@ MonoBehaviour:
   spinTime: 5
   wreckingRigidbody: {fileID: 1588454770016335671}
   lr: {fileID: 1588454770016335673}
+--- !u!114 &3405703308461792806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588454770016335666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee54c3e53ace33b41a45513fceb926dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballList:
+  - {fileID: 6557532554787082251}
+  - {fileID: 5994049134634546708}
+  - {fileID: 4474280182354657803}
+  - {fileID: 4571118570769394522}
+  - {fileID: 4629050287991516686}
 --- !u!1 &3757181537013395936
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4571118570769394522
 Transform:
   m_ObjectHideFlags: 0
@@ -336,7 +355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4474280182354657803
 Transform:
   m_ObjectHideFlags: 0
@@ -420,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4629050287991516686
 Transform:
   m_ObjectHideFlags: 0
@@ -504,7 +523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6557532554787082251
 Transform:
   m_ObjectHideFlags: 0
@@ -588,7 +607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5994049134634546708
 Transform:
   m_ObjectHideFlags: 0

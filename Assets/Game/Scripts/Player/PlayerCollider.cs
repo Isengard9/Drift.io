@@ -1,16 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Scripts.Vehicle;
 using UnityEngine;
 
 public class PlayerCollider : MonoBehaviour
 {
 
+    #region Variables
+
     private PlayerController playerController;
+    private PlayerVehicle playerVehicle;
+
+    #endregion
+
+    #region MonoBehaviour
 
     private void Awake()
     {
         playerController = GetComponent<PlayerController>();
+        playerVehicle = GetComponent<PlayerVehicle>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,4 +30,15 @@ public class PlayerCollider : MonoBehaviour
             other.GetComponent<PowerUpItem>().DestroyAction();
         }
     }
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.CompareTag("Ground"))
+        {
+            playerVehicle.isForwardMoving = true;
+        }
+    }
+
+    #endregion
+    
 }

@@ -2212,6 +2212,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684004649}
   m_CullTransparentMesh: 1
+--- !u!1 &755118122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 755118123}
+  - component: {fileID: 755118126}
+  - component: {fileID: 755118125}
+  - component: {fileID: 755118124}
+  m_Layer: 0
+  m_Name: Collider  (4)
+  m_TagString: Space
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &755118123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755118122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -20, z: 0}
+  m_LocalScale: {x: 120, y: 20, z: 120}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1437300330}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &755118124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755118122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &755118125
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755118122}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &755118126
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755118122}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &756350784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,6 +2770,7 @@ Transform:
   - {fileID: 245321032}
   - {fileID: 615284609}
   - {fileID: 2110827084}
+  - {fileID: 1437300330}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3554,6 +3652,139 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78e422f5321522e4c869a0fb9a5fd6f1, type: 3}
+--- !u!1 &1437300329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1437300330}
+  m_Layer: 0
+  m_Name: OuterSpace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1437300330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437300329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1710933241}
+  - {fileID: 1506098315}
+  - {fileID: 1450615835}
+  - {fileID: 1717229426}
+  - {fileID: 755118123}
+  m_Father: {fileID: 874239129}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1450615834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450615835}
+  - component: {fileID: 1450615838}
+  - component: {fileID: 1450615837}
+  - component: {fileID: 1450615836}
+  m_Layer: 0
+  m_Name: Collider  (2)
+  m_TagString: Space
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450615835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450615834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 59}
+  m_LocalScale: {x: 120, y: 50, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1437300330}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1450615836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450615834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1450615837
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450615834}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1450615838
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450615834}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1480346584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,6 +3894,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480346584}
   m_CullTransparentMesh: 0
+--- !u!1 &1506098314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1506098315}
+  - component: {fileID: 1506098318}
+  - component: {fileID: 1506098317}
+  - component: {fileID: 1506098316}
+  m_Layer: 0
+  m_Name: Collider  (1)
+  m_TagString: Space
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1506098315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506098314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -59, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 50, z: 120}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1437300330}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1506098316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506098314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1506098317
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506098314}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1506098318
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506098314}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1604697923
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,6 +4425,200 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1621033090}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1710933240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1710933241}
+  - component: {fileID: 1710933244}
+  - component: {fileID: 1710933243}
+  - component: {fileID: 1710933242}
+  m_Layer: 0
+  m_Name: 'Collider '
+  m_TagString: Space
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1710933241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710933240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 50, z: 120}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1437300330}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1710933242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710933240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1710933243
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710933240}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1710933244
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710933240}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1717229425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717229426}
+  - component: {fileID: 1717229429}
+  - component: {fileID: 1717229428}
+  - component: {fileID: 1717229427}
+  m_Layer: 0
+  m_Name: Collider  (3)
+  m_TagString: Space
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1717229426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717229425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -59}
+  m_LocalScale: {x: 120, y: 50, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1437300330}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1717229427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717229425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1717229428
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717229425}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1717229429
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717229425}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1725457016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4462,9 +4984,9 @@ GameObject:
   - component: {fileID: 1949398417}
   - component: {fileID: 1949398418}
   - component: {fileID: 1949398424}
-  - component: {fileID: 1949398423}
   - component: {fileID: 1949398425}
   - component: {fileID: 1949398426}
+  - component: {fileID: 1949398427}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Player
@@ -4505,20 +5027,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &1949398423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949398416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3114f56bb140e4169b552b5444b4bc54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballController: {fileID: 0}
-  wreckingBallController: {fileID: 1826747049}
 --- !u!65 &1949398424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4563,6 +5071,19 @@ MonoBehaviour:
   isForwardMoving: 1
   joystick: {fileID: 1957236155}
   rotationSpeed: 2
+--- !u!114 &1949398427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949398416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3114f56bb140e4169b552b5444b4bc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wreckingBallController: {fileID: 1826747049}
 --- !u!1001 &1957236154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5415,7 +5936,6 @@ GameObject:
   - component: {fileID: 1247076253163421469}
   - component: {fileID: 2747688101730538910}
   - component: {fileID: 3524901038691819271}
-  - component: {fileID: 3524901038691819272}
   - component: {fileID: 3524901038691819273}
   m_Layer: 0
   m_Name: AERNA026_Part_11
@@ -5500,7 +6020,6 @@ GameObject:
   - component: {fileID: 2330690254240024933}
   - component: {fileID: 450380970456809350}
   - component: {fileID: 8940108901686190433}
-  - component: {fileID: 8940108901686190434}
   - component: {fileID: 8940108901686190435}
   m_Layer: 0
   m_Name: AERNA025_Part_5
@@ -5520,7 +6039,6 @@ GameObject:
   - component: {fileID: 5551214237581178619}
   - component: {fileID: 7729524280797510230}
   - component: {fileID: 7078903602080135806}
-  - component: {fileID: 7729524280797510231}
   - component: {fileID: 7729524280797510232}
   m_Layer: 0
   m_Name: AERNA027_Part_17
@@ -5769,7 +6287,6 @@ GameObject:
   - component: {fileID: 8068885709849011482}
   - component: {fileID: 1897262344590372556}
   - component: {fileID: 2482325831766767148}
-  - component: {fileID: 8068885709849011483}
   - component: {fileID: 8068885709849011484}
   m_Layer: 0
   m_Name: AERNA025_Part_8
@@ -5839,7 +6356,6 @@ GameObject:
   - component: {fileID: 6154942860448060366}
   - component: {fileID: 5541984120425941508}
   - component: {fileID: 7893222697959793632}
-  - component: {fileID: 7893222697959793633}
   - component: {fileID: 7893222697959793634}
   m_Layer: 0
   m_Name: AERNA029_Part_4
@@ -5867,7 +6383,6 @@ GameObject:
   - component: {fileID: 2371130423004781502}
   - component: {fileID: 5358662934255970498}
   - component: {fileID: 5255096673587589088}
-  - component: {fileID: 5358662934255970499}
   - component: {fileID: 5358662934255970500}
   m_Layer: 0
   m_Name: AERNA026_Part_19
@@ -5887,7 +6402,6 @@ GameObject:
   - component: {fileID: 2956364547005062800}
   - component: {fileID: 5621400233260432054}
   - component: {fileID: 5435377615932034745}
-  - component: {fileID: 5621400233260432055}
   - component: {fileID: 5621400233260432056}
   m_Layer: 0
   m_Name: AERNA026_Part_14
@@ -6002,7 +6516,6 @@ GameObject:
   - component: {fileID: 2200022645005863772}
   - component: {fileID: 3758444540765269151}
   - component: {fileID: 7844178133645106835}
-  - component: {fileID: 7844178133645106836}
   - component: {fileID: 7844178133645106837}
   m_Layer: 0
   m_Name: AERNA026_Part_9
@@ -6137,7 +6650,6 @@ GameObject:
   - component: {fileID: 528962952161277802}
   - component: {fileID: 6813815619451319828}
   - component: {fileID: 6965227026393355038}
-  - component: {fileID: 6965227026393355039}
   - component: {fileID: 6965227026393355040}
   m_Layer: 0
   m_Name: AERNA026_Part_16
@@ -6310,7 +6822,6 @@ GameObject:
   - component: {fileID: 7943757316289524197}
   - component: {fileID: 2231070475879080452}
   - component: {fileID: 3472592234922894923}
-  - component: {fileID: 7943757316289524198}
   - component: {fileID: 7943757316289524199}
   m_Layer: 0
   m_Name: AERNA028_Part_7
@@ -6467,7 +6978,6 @@ GameObject:
   - component: {fileID: 596263390873197289}
   - component: {fileID: 8468557715247353077}
   - component: {fileID: 2147783112285032067}
-  - component: {fileID: 8468557715247353078}
   - component: {fileID: 8468557715247353079}
   m_Layer: 0
   m_Name: AERNA025_Part_1
@@ -6559,7 +7069,6 @@ GameObject:
   - component: {fileID: 7705793365121310919}
   - component: {fileID: 5326196987277617399}
   - component: {fileID: 727078483522499198}
-  - component: {fileID: 7705793365121310920}
   - component: {fileID: 7705793365121310921}
   m_Layer: 0
   m_Name: AERNA027_Part_10
@@ -6594,7 +7103,6 @@ GameObject:
   - component: {fileID: 9040372774418604091}
   - component: {fileID: 2270749328607450022}
   - component: {fileID: 7160032166522828121}
-  - component: {fileID: 9040372774418604092}
   - component: {fileID: 9040372774418604093}
   m_Layer: 0
   m_Name: AERNA026_Part_18
@@ -6695,7 +7203,6 @@ GameObject:
   - component: {fileID: 1577455011556646810}
   - component: {fileID: 5758099447004800526}
   - component: {fileID: 7737827591657025218}
-  - component: {fileID: 7737827591657025219}
   - component: {fileID: 7737827591657025220}
   m_Layer: 0
   m_Name: AERNA029_Part_13
@@ -6757,7 +7264,6 @@ GameObject:
   - component: {fileID: 2725595726845497245}
   - component: {fileID: 7523057247807866330}
   - component: {fileID: 74541507960218451}
-  - component: {fileID: 7523057247807866331}
   - component: {fileID: 7523057247807866332}
   m_Layer: 0
   m_Name: AERNA028_Part_2
@@ -6819,7 +7325,6 @@ GameObject:
   - component: {fileID: 5821629218276886215}
   - component: {fileID: 2805583941350506459}
   - component: {fileID: 5060715734433773696}
-  - component: {fileID: 5821629218276886216}
   - component: {fileID: 5821629218276886217}
   m_Layer: 0
   m_Name: AERNA026_Part_4
@@ -6862,7 +7367,6 @@ GameObject:
   - component: {fileID: 3862433440205315782}
   - component: {fileID: 5308039115965337040}
   - component: {fileID: 7997171811413843153}
-  - component: {fileID: 7997171811413843154}
   - component: {fileID: 7997171811413843155}
   m_Layer: 0
   m_Name: AERNA027_Part_16
@@ -6913,7 +7417,6 @@ GameObject:
   - component: {fileID: 83890457799213059}
   - component: {fileID: 6404970084662156699}
   - component: {fileID: 6116193246266394446}
-  - component: {fileID: 6404970084662156700}
   - component: {fileID: 6404970084662156701}
   m_Layer: 0
   m_Name: AERNA025_Part_27
@@ -7158,7 +7661,6 @@ GameObject:
   - component: {fileID: 5617241593251761087}
   - component: {fileID: 1918776690289285782}
   - component: {fileID: 5386116929950378013}
-  - component: {fileID: 5617241593251761088}
   - component: {fileID: 5617241593251761089}
   m_Layer: 0
   m_Name: AERNA028_Part_1
@@ -7357,7 +7859,6 @@ GameObject:
   - component: {fileID: 8074660006991733118}
   - component: {fileID: 3289563945030347988}
   - component: {fileID: 8183418734852842889}
-  - component: {fileID: 8183418734852842890}
   - component: {fileID: 8183418734852842891}
   m_Layer: 0
   m_Name: AERNA026_Part_13
@@ -7633,7 +8134,6 @@ GameObject:
   - component: {fileID: 7406570624786844975}
   - component: {fileID: 8419721592846080518}
   - component: {fileID: 544687274110216853}
-  - component: {fileID: 8419721592846080519}
   - component: {fileID: 8419721592846080520}
   m_Layer: 0
   m_Name: AERNA026_Part_6
@@ -7711,7 +8211,6 @@ GameObject:
   - component: {fileID: 7305694545685165152}
   - component: {fileID: 2319703714192762261}
   - component: {fileID: 8345791046238516995}
-  - component: {fileID: 8345791046238516996}
   - component: {fileID: 8345791046238516997}
   m_Layer: 0
   m_Name: AERNA025_Part_4
@@ -7796,7 +8295,6 @@ GameObject:
   - component: {fileID: 4641813263385721372}
   - component: {fileID: 395174696886698336}
   - component: {fileID: 1855226852056078219}
-  - component: {fileID: 4641813263385721373}
   - component: {fileID: 4641813263385721374}
   m_Layer: 0
   m_Name: AERNA025_Part_23
@@ -8038,7 +8536,6 @@ GameObject:
   - component: {fileID: 8850901631046477025}
   - component: {fileID: 7715622939501626431}
   - component: {fileID: 8483598974575925033}
-  - component: {fileID: 8850901631046477026}
   - component: {fileID: 8850901631046477027}
   m_Layer: 0
   m_Name: AERNA026_Part_2
@@ -8210,7 +8707,6 @@ GameObject:
   - component: {fileID: 6718903056887480293}
   - component: {fileID: 5705726578216642415}
   - component: {fileID: 8327904002746455237}
-  - component: {fileID: 8327904002746455238}
   - component: {fileID: 8327904002746455239}
   m_Layer: 0
   m_Name: AERNA026_Part_24
@@ -8295,7 +8791,6 @@ GameObject:
   - component: {fileID: 2124528098970320976}
   - component: {fileID: 2221380760935519070}
   - component: {fileID: 9072024023508592923}
-  - component: {fileID: 9072024023508592924}
   - component: {fileID: 9072024023508592925}
   m_Layer: 0
   m_Name: AERNA025_Part_11
@@ -8357,7 +8852,6 @@ GameObject:
   - component: {fileID: 8907570339218579545}
   - component: {fileID: 5451615229764427099}
   - component: {fileID: 1902430124595949503}
-  - component: {fileID: 8907570339218579546}
   - component: {fileID: 8907570339218579547}
   m_Layer: 0
   m_Name: AERNA027_Part_2
@@ -8392,7 +8886,6 @@ GameObject:
   - component: {fileID: 3789204602702749788}
   - component: {fileID: 7268285215035918164}
   - component: {fileID: 5436605276932938974}
-  - component: {fileID: 7268285215035918165}
   - component: {fileID: 7268285215035918166}
   m_Layer: 0
   m_Name: AERNA025_Part_7
@@ -8435,7 +8928,6 @@ GameObject:
   - component: {fileID: 7331106829344112918}
   - component: {fileID: 6845705810617698175}
   - component: {fileID: 6189236354513000637}
-  - component: {fileID: 7331106829344112919}
   - component: {fileID: 7331106829344112920}
   m_Layer: 0
   m_Name: AERNA027_Part_1
@@ -8539,7 +9031,6 @@ GameObject:
   - component: {fileID: 7638888693943379734}
   - component: {fileID: 3954406828998321555}
   - component: {fileID: 3674519942727622294}
-  - component: {fileID: 7638888693943379735}
   - component: {fileID: 7638888693943379736}
   m_Layer: 0
   m_Name: AERNA028_Part_3
@@ -8636,7 +9127,6 @@ GameObject:
   - component: {fileID: 292822320599743821}
   - component: {fileID: 466525360413582146}
   - component: {fileID: 5831784232223439115}
-  - component: {fileID: 5831784232223439116}
   - component: {fileID: 5831784232223439117}
   m_Layer: 0
   m_Name: AERNA027_Part_13
@@ -8698,7 +9188,6 @@ GameObject:
   - component: {fileID: 1119488388889040201}
   - component: {fileID: 906412969383543878}
   - component: {fileID: 2764575257300039830}
-  - component: {fileID: 2895367349953775472}
   - component: {fileID: 2895367349953775473}
   m_Layer: 0
   m_Name: AERNA025_Part_28
@@ -8707,22 +9196,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &2895367349953775472
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895367349953775471}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &2895367349953775473
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8805,7 +9278,6 @@ GameObject:
   - component: {fileID: 1186828390306662891}
   - component: {fileID: 1420470008175853352}
   - component: {fileID: 4018395579738403061}
-  - component: {fileID: 4018395579738403062}
   - component: {fileID: 4018395579738403063}
   m_Layer: 0
   m_Name: AERNA029_Part_7
@@ -8848,7 +9320,6 @@ GameObject:
   - component: {fileID: 7125572921511023510}
   - component: {fileID: 7903538850709483588}
   - component: {fileID: 7546283675103016906}
-  - component: {fileID: 7903538850709483589}
   - component: {fileID: 7903538850709483590}
   m_Layer: 0
   m_Name: AERNA025_Part_26
@@ -9017,7 +9488,6 @@ GameObject:
   - component: {fileID: 3430528543289362963}
   - component: {fileID: 1982750063348203548}
   - component: {fileID: 7688235707088588028}
-  - component: {fileID: 7688235707088588029}
   - component: {fileID: 7688235707088588030}
   m_Layer: 0
   m_Name: AERNA028_Part_5
@@ -9068,22 +9538,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &3524901038691819272
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61040341601203950}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &3524901038691819273
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9109,7 +9563,6 @@ GameObject:
   - component: {fileID: 6622512190558214755}
   - component: {fileID: 7729985380567189553}
   - component: {fileID: 2308962077649270962}
-  - component: {fileID: 7729985380567189554}
   - component: {fileID: 7729985380567189555}
   m_Layer: 0
   m_Name: AERNA025_Part_9
@@ -9129,7 +9582,6 @@ GameObject:
   - component: {fileID: 5741468176759192369}
   - component: {fileID: 7492344229400517900}
   - component: {fileID: 1949456089774932247}
-  - component: {fileID: 7492344229400517901}
   - component: {fileID: 7492344229400517902}
   m_Layer: 0
   m_Name: AERNA025_Part_18
@@ -9218,7 +9670,6 @@ GameObject:
   - component: {fileID: 6137665173534310594}
   - component: {fileID: 618615359987210113}
   - component: {fileID: 5053929837697039478}
-  - component: {fileID: 6137665173534310595}
   - component: {fileID: 6137665173534310596}
   m_Layer: 0
   m_Name: AERNA027_Part_9
@@ -9296,7 +9747,6 @@ GameObject:
   - component: {fileID: 828011616975864286}
   - component: {fileID: 800773430260920325}
   - component: {fileID: 5705901445227084830}
-  - component: {fileID: 5705901445227084831}
   - component: {fileID: 5705901445227084832}
   m_Layer: 0
   m_Name: AERNA028_Part_10
@@ -9441,7 +9891,6 @@ GameObject:
   - component: {fileID: 5816658075519365780}
   - component: {fileID: 7736379115073991781}
   - component: {fileID: 6075470764452562349}
-  - component: {fileID: 7736379115073991782}
   - component: {fileID: 7736379115073991783}
   m_Layer: 0
   m_Name: AERNA029_Part_8
@@ -9511,7 +9960,6 @@ GameObject:
   - component: {fileID: 6822725409879183530}
   - component: {fileID: 7993377591906077887}
   - component: {fileID: 2325299180538923115}
-  - component: {fileID: 7993377591906077888}
   - component: {fileID: 7993377591906077889}
   m_Layer: 0
   m_Name: AERNA028_Part_8
@@ -9588,7 +10036,6 @@ GameObject:
   - component: {fileID: 3794412194725738444}
   - component: {fileID: 734235981676260968}
   - component: {fileID: 3752874661321453060}
-  - component: {fileID: 3909710531389153087}
   - component: {fileID: 3909710531389153088}
   m_Layer: 0
   m_Name: AERNA029_Part_12
@@ -9597,22 +10044,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &3909710531389153087
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3909710531389153086}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &3909710531389153088
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9680,7 +10111,6 @@ GameObject:
   - component: {fileID: 4829733929836949840}
   - component: {fileID: 1777979269389241374}
   - component: {fileID: 2243722050724622109}
-  - component: {fileID: 4829733929836949841}
   - component: {fileID: 4829733929836949842}
   m_Layer: 0
   m_Name: AERNA025_Part_25
@@ -9700,7 +10130,6 @@ GameObject:
   - component: {fileID: 1110934963318053745}
   - component: {fileID: 1031337493279539374}
   - component: {fileID: 4241853027946100786}
-  - component: {fileID: 4241853027946100787}
   - component: {fileID: 4241853027946100788}
   m_Layer: 0
   m_Name: AERNA027_Part_18
@@ -9720,7 +10149,6 @@ GameObject:
   - component: {fileID: 8708551020063464271}
   - component: {fileID: 7701353753632848705}
   - component: {fileID: 7224361589482035032}
-  - component: {fileID: 8708551020063464272}
   - component: {fileID: 8708551020063464273}
   m_Layer: 0
   m_Name: AERNA026_Part_8
@@ -9790,7 +10218,6 @@ GameObject:
   - component: {fileID: 1835800816541765080}
   - component: {fileID: 8292616691539151202}
   - component: {fileID: 2290399653334832338}
-  - component: {fileID: 8292616691539151203}
   - component: {fileID: 8292616691539151204}
   m_Layer: 0
   m_Name: AERNA029_Part_2
@@ -9841,22 +10268,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &4018395579738403062
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3126894026300376998}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &4018395579738403063
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9882,7 +10293,6 @@ GameObject:
   - component: {fileID: 3350287126095234812}
   - component: {fileID: 5503771545000436862}
   - component: {fileID: 5504467392026761677}
-  - component: {fileID: 5504467392026761678}
   - component: {fileID: 5504467392026761679}
   m_Layer: 0
   m_Name: AERNA027_Part_14
@@ -9986,7 +10396,6 @@ GameObject:
   - component: {fileID: 762721048384163093}
   - component: {fileID: 1225460905900537531}
   - component: {fileID: 8672323483810047997}
-  - component: {fileID: 8672323483810047998}
   - component: {fileID: 8672323483810047999}
   m_Layer: 0
   m_Name: AERNA026_Part_25
@@ -10056,7 +10465,6 @@ GameObject:
   - component: {fileID: 6679289897162486227}
   - component: {fileID: 8687018822777906926}
   - component: {fileID: 343867596510237023}
-  - component: {fileID: 8687018822777906927}
   - component: {fileID: 8687018822777906928}
   m_Layer: 0
   m_Name: AERNA025_Part_12
@@ -10122,22 +10530,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &4241853027946100787
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3947887835536362080}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &4241853027946100788
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10163,7 +10555,6 @@ GameObject:
   - component: {fileID: 3418918732227160689}
   - component: {fileID: 8812216858428791634}
   - component: {fileID: 1863582390921614105}
-  - component: {fileID: 8812216858428791635}
   - component: {fileID: 8812216858428791636}
   m_Layer: 0
   m_Name: AERNA027_Part_19
@@ -10240,7 +10631,6 @@ GameObject:
   - component: {fileID: 3713005254810077642}
   - component: {fileID: 3624547400585566117}
   - component: {fileID: 437932349392557742}
-  - component: {fileID: 4540028802966961658}
   - component: {fileID: 4540028802966961659}
   m_Layer: 0
   m_Name: AERNA025_Part_21
@@ -10249,22 +10639,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &4540028802966961658
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4540028802966961657}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &4540028802966961659
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10302,22 +10676,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &4641813263385721373
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068609764356331341}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &4641813263385721374
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10343,7 +10701,6 @@ GameObject:
   - component: {fileID: 8784962085664779489}
   - component: {fileID: 2464872914863071768}
   - component: {fileID: 6825101097790941276}
-  - component: {fileID: 8784962085664779490}
   - component: {fileID: 8784962085664779491}
   m_Layer: 0
   m_Name: AERNA027_Part_7
@@ -10363,7 +10720,6 @@ GameObject:
   - component: {fileID: 6764174961152619740}
   - component: {fileID: 8117943181648851656}
   - component: {fileID: 4747551648276435580}
-  - component: {fileID: 8117943181648851657}
   - component: {fileID: 8117943181648851658}
   m_Layer: 0
   m_Name: AERNA025_Part_2
@@ -10383,7 +10739,6 @@ GameObject:
   - component: {fileID: 6925991955618883481}
   - component: {fileID: 1562711423583818861}
   - component: {fileID: 8010150350903928444}
-  - component: {fileID: 8010150350903928445}
   - component: {fileID: 8010150350903928446}
   m_Layer: 0
   m_Name: AERNA025_Part_19
@@ -10411,7 +10766,6 @@ GameObject:
   - component: {fileID: 4996887004539296686}
   - component: {fileID: 6177188019802424644}
   - component: {fileID: 850530296646871269}
-  - component: {fileID: 6177188019802424645}
   - component: {fileID: 6177188019802424646}
   m_Layer: 0
   m_Name: AERNA025_Part_13
@@ -10500,22 +10854,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &4829733929836949841
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3939803398227737291}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &4829733929836949842
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10541,7 +10879,6 @@ GameObject:
   - component: {fileID: 6068132797122596260}
   - component: {fileID: 5357680070667042046}
   - component: {fileID: 1596240443503799150}
-  - component: {fileID: 6068132797122596261}
   - component: {fileID: 6068132797122596262}
   m_Layer: 0
   m_Name: AERNA027_Part_5
@@ -10561,7 +10898,6 @@ GameObject:
   - component: {fileID: 1011833745694681373}
   - component: {fileID: 5276097047144196468}
   - component: {fileID: 1882586934975623676}
-  - component: {fileID: 5276097047144196469}
   - component: {fileID: 5276097047144196470}
   m_Layer: 0
   m_Name: AERNA029_Part_5
@@ -10726,7 +11062,6 @@ GameObject:
   - component: {fileID: 5967466638019978539}
   - component: {fileID: 5485039378787386338}
   - component: {fileID: 1202836821893745943}
-  - component: {fileID: 5967466638019978540}
   - component: {fileID: 5967466638019978541}
   m_Layer: 0
   m_Name: AERNA027_Part_12
@@ -10838,7 +11173,6 @@ GameObject:
   - component: {fileID: 2655759266284350898}
   - component: {fileID: 7293608571977818084}
   - component: {fileID: 8389553385083721797}
-  - component: {fileID: 8389553385083721798}
   - component: {fileID: 8389553385083721799}
   m_Layer: 0
   m_Name: AERNA026_Part_17
@@ -10872,7 +11206,6 @@ GameObject:
   - component: {fileID: 1653936538475651704}
   - component: {fileID: 6930060876999760814}
   - component: {fileID: 1793025650540670886}
-  - component: {fileID: 6930060876999760815}
   - component: {fileID: 6930060876999760816}
   m_Layer: 0
   m_Name: AERNA026_Part_21
@@ -10892,7 +11225,6 @@ GameObject:
   - component: {fileID: 8587185769887102996}
   - component: {fileID: 6877484814976952092}
   - component: {fileID: 1727753219884880304}
-  - component: {fileID: 8587185769887102997}
   - component: {fileID: 8587185769887102998}
   m_Layer: 0
   m_Name: AERNA029_Part_3
@@ -10912,7 +11244,6 @@ GameObject:
   - component: {fileID: 985771569918084741}
   - component: {fileID: 7027286719751873577}
   - component: {fileID: 6650558453313837792}
-  - component: {fileID: 7027286719751873578}
   - component: {fileID: 7027286719751873579}
   m_Layer: 0
   m_Name: AERNA029_Part_9
@@ -10932,7 +11263,6 @@ GameObject:
   - component: {fileID: 1730165066157170719}
   - component: {fileID: 3377387759956958975}
   - component: {fileID: 6728071268924608888}
-  - component: {fileID: 6728071268924608889}
   - component: {fileID: 6728071268924608890}
   m_Layer: 0
   m_Name: AERNA025_Part_6
@@ -10952,7 +11282,6 @@ GameObject:
   - component: {fileID: 7040445902645564322}
   - component: {fileID: 1577772564376354722}
   - component: {fileID: 1367386686637037283}
-  - component: {fileID: 7040445902645564323}
   - component: {fileID: 7040445902645564324}
   m_Layer: 0
   m_Name: AERNA029_Part_11
@@ -11026,22 +11355,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4857943290093450807}
   m_Mesh: {fileID: 1854565209521457354, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &5276097047144196469
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4857943290093450807}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5276097047144196470
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11098,7 +11411,6 @@ GameObject:
   - component: {fileID: 9031956181355095570}
   - component: {fileID: 8115163891360707272}
   - component: {fileID: 748347534693027396}
-  - component: {fileID: 9031956181355095571}
   - component: {fileID: 9031956181355095572}
   m_Layer: 0
   m_Name: AERNA026_Part_23
@@ -11123,22 +11435,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484891888029533320}
   m_Mesh: {fileID: -1122085914498460479, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &5358662934255970499
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484891888029533320}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5358662934255970500
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11310,7 +11606,6 @@ GameObject:
   - component: {fileID: 931191021390180509}
   - component: {fileID: 1869451850272582190}
   - component: {fileID: 6264606307179341613}
-  - component: {fileID: 6264606307179341614}
   - component: {fileID: 6264606307179341615}
   m_Layer: 0
   m_Name: AERNA029_Part_6
@@ -11346,7 +11641,6 @@ GameObject:
   - component: {fileID: 2380296668933150585}
   - component: {fileID: 70955156425226355}
   - component: {fileID: 7533747900455744266}
-  - component: {fileID: 7533747900455744267}
   - component: {fileID: 7533747900455744268}
   m_Layer: 0
   m_Name: AERNA026_Part_22
@@ -11405,22 +11699,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &5504467392026761678
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4066770727806775552}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5504467392026761679
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11446,7 +11724,6 @@ GameObject:
   - component: {fileID: 5013116462996751102}
   - component: {fileID: 3323092847411591805}
   - component: {fileID: 3100471631001841623}
-  - component: {fileID: 5512250888603252791}
   - component: {fileID: 5512250888603252792}
   m_Layer: 0
   m_Name: AERNA026_Part_7
@@ -11455,22 +11732,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &5512250888603252791
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5512250888603252790}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5512250888603252792
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11496,7 +11757,6 @@ GameObject:
   - component: {fileID: 2041545056914440314}
   - component: {fileID: 3383415638311386359}
   - component: {fileID: 2781930425858509546}
-  - component: {fileID: 5526459458911156917}
   - component: {fileID: 5526459458911156918}
   m_Layer: 0
   m_Name: AERNA027_Part_6
@@ -11505,22 +11765,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &5526459458911156917
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5526459458911156916}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5526459458911156918
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11569,7 +11813,6 @@ GameObject:
   - component: {fileID: 6969814044943635118}
   - component: {fileID: 7164876336678443966}
   - component: {fileID: 809337486149864604}
-  - component: {fileID: 7164876336678443967}
   - component: {fileID: 7164876336678443968}
   m_Layer: 0
   m_Name: AERNA026_Part_12
@@ -11593,22 +11836,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &5617241593251761088
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693303433780214115}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5617241593251761089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11634,7 +11861,6 @@ GameObject:
   - component: {fileID: 3723813725370579447}
   - component: {fileID: 1260752862216139550}
   - component: {fileID: 6376034879462144021}
-  - component: {fileID: 6376034879462144022}
   - component: {fileID: 6376034879462144023}
   m_Layer: 0
   m_Name: AERNA026_Part_3
@@ -11651,22 +11877,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493610129474435267}
   m_Mesh: {fileID: 8314469180832774846, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &5621400233260432055
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493610129474435267}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5621400233260432056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11692,7 +11902,6 @@ GameObject:
   - component: {fileID: 1874184464496116652}
   - component: {fileID: 5096847926504458131}
   - component: {fileID: 2585783648485634369}
-  - component: {fileID: 5649809057441600464}
   - component: {fileID: 5649809057441600465}
   m_Layer: 0
   m_Name: AERNA025_Part_29
@@ -11701,22 +11910,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &5649809057441600464
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5649809057441600463}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5649809057441600465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11742,7 +11935,6 @@ GameObject:
   - component: {fileID: 1757059925515069352}
   - component: {fileID: 8262411787112668953}
   - component: {fileID: 1000330431192775513}
-  - component: {fileID: 8262411787112668954}
   - component: {fileID: 8262411787112668955}
   m_Layer: 0
   m_Name: AERNA026_Part_1
@@ -11811,7 +12003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3221796501214499f8b279e171a5b6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rbList: []
+  partList: []
 --- !u!1 &5704247681706093178
 GameObject:
   m_ObjectHideFlags: 0
@@ -11823,7 +12015,6 @@ GameObject:
   - component: {fileID: 846232288635823701}
   - component: {fileID: 6649131469152850969}
   - component: {fileID: 4515298038450224303}
-  - component: {fileID: 6649131469152850970}
   - component: {fileID: 6649131469152850971}
   m_Layer: 0
   m_Name: AERNA025_Part_10
@@ -11882,22 +12073,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &5705901445227084831
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3680131264190837698}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5705901445227084832
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11946,7 +12121,6 @@ GameObject:
   - component: {fileID: 6349998105083393534}
   - component: {fileID: 3822507506853176488}
   - component: {fileID: 3969937558809201588}
-  - component: {fileID: 6349998105083393535}
   - component: {fileID: 6349998105083393536}
   m_Layer: 0
   m_Name: AERNA025_Part_16
@@ -11966,7 +12140,6 @@ GameObject:
   - component: {fileID: 4763300653001722366}
   - component: {fileID: 3672996485091399539}
   - component: {fileID: 4127131302988791171}
-  - component: {fileID: 5786529549665262533}
   - component: {fileID: 5786529549665262534}
   m_Layer: 0
   m_Name: AERNA025_Part_17
@@ -11975,22 +12148,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &5786529549665262533
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5786529549665262532}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5786529549665262534
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12035,22 +12192,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &5821629218276886216
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387937802984394040}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5821629218276886217
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12149,22 +12290,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &5831784232223439116
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2858810856610677265}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5831784232223439117
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12202,22 +12327,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &5967466638019978540
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5025955617010922844}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &5967466638019978541
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12251,7 +12360,6 @@ GameObject:
   - component: {fileID: 31345796638845843}
   - component: {fileID: 7978525406466283070}
   - component: {fileID: 3825018932898452222}
-  - component: {fileID: 7978525406466283071}
   - component: {fileID: 7978525406466283072}
   m_Layer: 0
   m_Name: AERNA027_Part_8
@@ -12271,7 +12379,6 @@ GameObject:
   - component: {fileID: 7005133217555598905}
   - component: {fileID: 786958881913431868}
   - component: {fileID: 6687143370732701897}
-  - component: {fileID: 7005133217555598906}
   - component: {fileID: 7005133217555598907}
   m_Layer: 0
   m_Name: AERNA025_Part_15
@@ -12295,22 +12402,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &6068132797122596261
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4832083524931983821}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6068132797122596262
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12432,22 +12523,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &6137665173534310595
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3620573408076037544}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6137665173534310596
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12500,22 +12575,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4722276759842610499}
   m_Mesh: {fileID: 7673695035256876645, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &6177188019802424645
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722276759842610499}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6177188019802424646
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12614,22 +12673,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &6264606307179341614
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5437070103177928784}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6264606307179341615
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12655,7 +12698,6 @@ GameObject:
   - component: {fileID: 5275087181266288527}
   - component: {fileID: 5058408235885604530}
   - component: {fileID: 2099958568268327345}
-  - component: {fileID: 6349990009397831825}
   - component: {fileID: 6349990009397831826}
   m_Layer: 0
   m_Name: AERNA027_Part_11
@@ -12664,22 +12706,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &6349990009397831825
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6349990009397831824}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6349990009397831826
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12709,22 +12735,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &6349998105083393535
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5774713125579132878}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6349998105083393536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12750,7 +12760,6 @@ GameObject:
   - component: {fileID: 1733291691993699323}
   - component: {fileID: 1266358760855128118}
   - component: {fileID: 1798561627549691311}
-  - component: {fileID: 6352574803858697534}
   - component: {fileID: 6352574803858697535}
   m_Layer: 0
   m_Name: AERNA025_Part_3
@@ -12759,22 +12768,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &6352574803858697534
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6352574803858697533}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6352574803858697535
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12831,22 +12824,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &6376034879462144022
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5619149253652468644}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6376034879462144023
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12869,22 +12846,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578050382223131283}
   m_Mesh: {fileID: -1433551746896099769, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &6404970084662156700
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578050382223131283}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6404970084662156701
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12925,7 +12886,6 @@ GameObject:
   - component: {fileID: 8683093534373734232}
   - component: {fileID: 3366944075999864202}
   - component: {fileID: 2887319312288284984}
-  - component: {fileID: 8683093534373734233}
   - component: {fileID: 8683093534373734234}
   m_Layer: 0
   m_Name: AERNA025_Part_30
@@ -12945,7 +12905,6 @@ GameObject:
   - component: {fileID: 210633533184249174}
   - component: {fileID: 877498409424460056}
   - component: {fileID: 5822427910473271306}
-  - component: {fileID: 6644029968074109329}
   - component: {fileID: 6644029968074109330}
   m_Layer: 0
   m_Name: AERNA025_Part_14
@@ -12954,22 +12913,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &6644029968074109329
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6644029968074109328}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6644029968074109330
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12992,22 +12935,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5704247681706093178}
   m_Mesh: {fileID: 5472742547436259876, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &6649131469152850970
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5704247681706093178}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6649131469152850971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13075,7 +13002,6 @@ GameObject:
   - component: {fileID: 7969068535181472268}
   - component: {fileID: 7079470413300726107}
   - component: {fileID: 2032843615545838161}
-  - component: {fileID: 7969068535181472269}
   - component: {fileID: 7969068535181472270}
   m_Layer: 0
   m_Name: AERNA025_Part_24
@@ -13198,22 +13124,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &6728071268924608889
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5225258907318721220}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6728071268924608890
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13461,22 +13371,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5133903775279639756}
   m_Mesh: {fileID: 5283890817434521585, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &6930060876999760815
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5133903775279639756}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6930060876999760816
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13533,22 +13427,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &6965227026393355039
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791576665690323442}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &6965227026393355040
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13593,22 +13471,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7005133217555598906
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6006949411735456231}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7005133217555598907
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13631,22 +13493,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5202228015308555404}
   m_Mesh: {fileID: 3029667088759031136, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7027286719751873578
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5202228015308555404}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7027286719751873579
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13672,7 +13518,6 @@ GameObject:
   - component: {fileID: 8711039107235377680}
   - component: {fileID: 8420789587439081360}
   - component: {fileID: 362712898418709036}
-  - component: {fileID: 8711039107235377681}
   - component: {fileID: 8711039107235377682}
   m_Layer: 0
   m_Name: AERNA025_Part_20
@@ -13696,22 +13541,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7040445902645564323
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5244206977501646901}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7040445902645564324
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13787,7 +13616,6 @@ GameObject:
   - component: {fileID: 3375774740283861306}
   - component: {fileID: 5970063597408922166}
   - component: {fileID: 4193147423880795291}
-  - component: {fileID: 7099221090510836817}
   - component: {fileID: 7099221090510836818}
   m_Layer: 0
   m_Name: AERNA026_Part_20
@@ -13796,22 +13624,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &7099221090510836817
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7099221090510836816}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7099221090510836818
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13894,7 +13706,6 @@ GameObject:
   - component: {fileID: 3353495832890331290}
   - component: {fileID: 8825431610674489186}
   - component: {fileID: 9091698007089069709}
-  - component: {fileID: 9091698007089069710}
   - component: {fileID: 9091698007089069711}
   m_Layer: 0
   m_Name: AERNA029_Part_10
@@ -13911,22 +13722,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5574550963761454262}
   m_Mesh: {fileID: -4140008672232093256, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7164876336678443967
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574550963761454262}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7164876336678443968
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13994,7 +13789,6 @@ GameObject:
   - component: {fileID: 3750404230610218447}
   - component: {fileID: 294716530431566744}
   - component: {fileID: 1610783124107673069}
-  - component: {fileID: 7251998889983331070}
   - component: {fileID: 7251998889983331071}
   m_Layer: 0
   m_Name: AERNA028_Part_6
@@ -14003,22 +13797,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &7251998889983331070
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7251998889983331069}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7251998889983331071
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14041,22 +13819,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2714032864799595444}
   m_Mesh: {fileID: -5266133874932227404, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7268285215035918165
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2714032864799595444}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7268285215035918166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14082,7 +13844,6 @@ GameObject:
   - component: {fileID: 4229394792194260176}
   - component: {fileID: 7834045913948249101}
   - component: {fileID: 6761694381908302101}
-  - component: {fileID: 7834045913948249102}
   - component: {fileID: 7834045913948249103}
   m_Layer: 0
   m_Name: AERNA029_Part_14
@@ -14129,22 +13890,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7331106829344112919
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2754670472365935010}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7331106829344112920
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14200,7 +13945,6 @@ GameObject:
   - component: {fileID: 5314147809138279060}
   - component: {fileID: 4704283582804281861}
   - component: {fileID: 986745376452584962}
-  - component: {fileID: 7397760077427184981}
   - component: {fileID: 7397760077427184982}
   m_Layer: 0
   m_Name: AERNA026_Part_10
@@ -14209,22 +13953,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &7397760077427184981
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7397760077427184980}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7397760077427184982
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14262,22 +13990,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3554299429783172417}
   m_Mesh: {fileID: -3331168600669613272, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7492344229400517901
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3554299429783172417}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7492344229400517902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14300,22 +14012,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366517475342333897}
   m_Mesh: {fileID: -1454152102176064881, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7523057247807866331
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366517475342333897}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7523057247807866332
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14372,22 +14068,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7533747900455744267
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5485268500594610330}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7533747900455744268
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14459,22 +14139,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7638888693943379735
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2789260568797125211}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7638888693943379736
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14531,22 +14195,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7688235707088588029
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3491544381515010730}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7688235707088588030
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14584,22 +14232,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7705793365121310920
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1181382380342427068}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7705793365121310921
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14630,22 +14262,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160510330190242815}
   m_Mesh: {fileID: 8110134870855597585, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7729524280797510231
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160510330190242815}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7729524280797510232
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14668,22 +14284,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3551665251613943415}
   m_Mesh: {fileID: -3989600337327895405, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7729985380567189554
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3551665251613943415}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7729985380567189555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14706,22 +14306,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3796393033083920430}
   m_Mesh: {fileID: 1289322600224249456, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7736379115073991782
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3796393033083920430}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7736379115073991783
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14778,22 +14362,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7737827591657025219
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278571883053381733}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7737827591657025220
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14819,7 +14387,6 @@ GameObject:
   - component: {fileID: 8438483519513802043}
   - component: {fileID: 4730777681689076656}
   - component: {fileID: 1666958945425720285}
-  - component: {fileID: 8438483519513802044}
   - component: {fileID: 8438483519513802045}
   m_Layer: 0
   m_Name: AERNA029_Part_15
@@ -14844,22 +14411,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7282391100662603467}
   m_Mesh: {fileID: 7325070024899351381, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7834045913948249102
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7282391100662603467}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7834045913948249103
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14916,22 +14467,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7844178133645106836
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638665315452136156}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7844178133645106837
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14988,22 +14523,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7893222697959793633
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463006262044192054}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7893222697959793634
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15026,22 +14545,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3291609627114515624}
   m_Mesh: {fileID: 4567597555571008996, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7903538850709483589
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3291609627114515624}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7903538850709483590
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15071,22 +14574,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7943757316289524198
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942904452881669897}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7943757316289524199
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15116,22 +14603,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7969068535181472269
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6677079265909623025}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7969068535181472270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15154,22 +14625,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5999620333646841678}
   m_Mesh: {fileID: 1344130025507818909, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7978525406466283071
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5999620333646841678}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7978525406466283072
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15192,22 +14647,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3829019090542264078}
   m_Mesh: {fileID: -8791678051864309427, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &7993377591906077888
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3829019090542264078}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7993377591906077889
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15264,22 +14703,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7997171811413843154
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493828902010768563}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &7997171811413843155
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15336,22 +14759,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8010150350903928445
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4700594751144594998}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8010150350903928446
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15377,7 +14784,6 @@ GameObject:
   - component: {fileID: 2353458687861256320}
   - component: {fileID: 5929802148280948696}
   - component: {fileID: 1177063568660136581}
-  - component: {fileID: 8016082306750711956}
   - component: {fileID: 8016082306750711957}
   m_Layer: 0
   m_Name: AERNA029_Part_1
@@ -15386,22 +14792,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8016082306750711956
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8016082306750711955}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8016082306750711957
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15431,22 +14821,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8068885709849011483
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402915210330227720}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8068885709849011484
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15500,22 +14874,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4697065875110021510}
   m_Mesh: {fileID: 2119745807955144111, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &8117943181648851657
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4697065875110021510}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8117943181648851658
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15541,7 +14899,6 @@ GameObject:
   - component: {fileID: 1116518294170622850}
   - component: {fileID: 4198342306718173817}
   - component: {fileID: 8924288752956224665}
-  - component: {fileID: 8924288752956224666}
   - component: {fileID: 8924288752956224667}
   m_Layer: 0
   m_Name: AERNA028_Part_9
@@ -15600,22 +14957,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8183418734852842890
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802303250395666080}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8183418734852842891
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15641,7 +14982,6 @@ GameObject:
   - component: {fileID: 7381520954528795925}
   - component: {fileID: 7819670839394490969}
   - component: {fileID: 4068793385767937220}
-  - component: {fileID: 8220223025163196329}
   - component: {fileID: 8220223025163196330}
   m_Layer: 0
   m_Name: AERNA027_Part_3
@@ -15650,22 +14990,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8220223025163196329
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8220223025163196328}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8220223025163196330
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15696,22 +15020,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5688797261530900131}
   m_Mesh: {fileID: -5264803618955271448, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &8262411787112668954
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5688797261530900131}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8262411787112668955
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15734,22 +15042,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4013696010497483653}
   m_Mesh: {fileID: 7302758977149718128, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &8292616691539151203
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4013696010497483653}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8292616691539151204
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15814,22 +15106,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8327904002746455238
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2442726780592088576}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8327904002746455239
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15928,22 +15204,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8345791046238516996
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002140899719523704}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8345791046238516997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16000,22 +15260,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8389553385083721798
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5073680519768177365}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8389553385083721799
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16038,22 +15282,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902624726472061908}
   m_Mesh: {fileID: -3440470673092244431, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &8419721592846080519
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902624726472061908}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8419721592846080520
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16099,22 +15327,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8438483519513802044
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7744828310077332373}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8438483519513802045
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16137,22 +15349,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114999294245455599}
   m_Mesh: {fileID: -6083949270950085319, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &8468557715247353078
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114999294245455599}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8468557715247353079
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16178,7 +15374,6 @@ GameObject:
   - component: {fileID: 560066560093450258}
   - component: {fileID: 6136491538151007690}
   - component: {fileID: 3884100764871671798}
-  - component: {fileID: 8477090467201110779}
   - component: {fileID: 8477090467201110780}
   m_Layer: 0
   m_Name: AERNA027_Part_20
@@ -16187,22 +15382,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8477090467201110779
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477090467201110778}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8477090467201110780
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16270,7 +15449,6 @@ GameObject:
   - component: {fileID: 3160742609475303693}
   - component: {fileID: 8181655588359072788}
   - component: {fileID: 8337160245731089320}
-  - component: {fileID: 8500056959089855358}
   - component: {fileID: 8500056959089855359}
   m_Layer: 0
   m_Name: AERNA025_Part_22
@@ -16279,22 +15457,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8500056959089855358
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8500056959089855357}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8500056959089855359
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16320,7 +15482,6 @@ GameObject:
   - component: {fileID: 300363948194800596}
   - component: {fileID: 8110638906731094920}
   - component: {fileID: 357676372262804693}
-  - component: {fileID: 8573565749519588946}
   - component: {fileID: 8573565749519588947}
   m_Layer: 0
   m_Name: AERNA026_Part_5
@@ -16329,22 +15490,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8573565749519588946
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573565749519588945}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8573565749519588947
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16374,22 +15519,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8587185769887102997
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161784227220164127}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8587185769887102998
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16415,7 +15544,6 @@ GameObject:
   - component: {fileID: 7358820929001322611}
   - component: {fileID: 8239105408962364605}
   - component: {fileID: 366884827547891597}
-  - component: {fileID: 8666533147804825588}
   - component: {fileID: 8666533147804825589}
   m_Layer: 0
   m_Name: AERNA027_Part_15
@@ -16424,22 +15552,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8666533147804825588
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8666533147804825587}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8666533147804825589
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16496,22 +15608,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8672323483810047998
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4129043272317894023}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8672323483810047999
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16541,22 +15637,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8683093534373734233
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6634025720493050187}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8683093534373734234
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16579,22 +15659,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4204672120021139543}
   m_Mesh: {fileID: -6244253149190008929, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &8687018822777906927
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4204672120021139543}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8687018822777906928
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16620,7 +15684,6 @@ GameObject:
   - component: {fileID: 2514690006584155975}
   - component: {fileID: 8319783461654845875}
   - component: {fileID: 3915947401714652052}
-  - component: {fileID: 8696653474174665261}
   - component: {fileID: 8696653474174665262}
   m_Layer: 0
   m_Name: AERNA026_Part_15
@@ -16629,22 +15692,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8696653474174665261
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8696653474174665260}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8696653474174665262
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16670,7 +15717,6 @@ GameObject:
   - component: {fileID: 6171792392370579494}
   - component: {fileID: 4569537215142557531}
   - component: {fileID: 1893693601658311372}
-  - component: {fileID: 8700453529481430924}
   - component: {fileID: 8700453529481430925}
   m_Layer: 0
   m_Name: AERNA027_Part_4
@@ -16679,22 +15725,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &8700453529481430924
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8700453529481430923}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8700453529481430925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16724,22 +15754,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8708551020063464272
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3951245058121754636}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8708551020063464273
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16769,22 +15783,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8711039107235377681
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7036453939107801507}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8711039107235377682
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16814,22 +15812,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8784962085664779490
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4648985540149596309}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8784962085664779491
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16852,22 +15834,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4256491028750328316}
   m_Mesh: {fileID: 801167137195487447, guid: 0337befb17824417ba4fcd19b1b0e304, type: 3}
---- !u!54 &8812216858428791635
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4256491028750328316}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8812216858428791636
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16905,22 +15871,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8850901631046477026
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292242016334191035}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8850901631046477027
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16950,22 +15900,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8907570339218579546
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2652518434907518635}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8907570339218579547
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17022,22 +15956,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8924288752956224666
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8122688533054655350}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8924288752956224667
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17094,22 +16012,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8940108901686190434
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134083533195863640}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &8940108901686190435
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17139,22 +16041,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &9031956181355095571
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353389602911790938}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &9031956181355095572
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17184,22 +16070,6 @@ Transform:
   m_Father: {fileID: 4926253353366507453}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &9040372774418604092
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192071646224040072}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &9040372774418604093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17256,22 +16126,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &9072024023508592924
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2578987065908294608}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &9072024023508592925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17328,22 +16182,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &9091698007089069710
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7162745036766605993}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &9091698007089069711
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17369,7 +16207,6 @@ GameObject:
   - component: {fileID: 1421933133973263090}
   - component: {fileID: 8431787286332409418}
   - component: {fileID: 1291671503719746082}
-  - component: {fileID: 9149547129498056457}
   - component: {fileID: 9149547129498056458}
   m_Layer: 0
   m_Name: AERNA028_Part_4
@@ -17378,22 +16215,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &9149547129498056457
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9149547129498056456}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &9149547129498056458
 MeshCollider:
   m_ObjectHideFlags: 0

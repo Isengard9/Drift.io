@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class PlatformController : MonoBehaviour
@@ -8,7 +9,7 @@ public class PlatformController : MonoBehaviour
 
     #region Variables
 
-    [SerializeField] private List<Rigidbody> rbList = new List<Rigidbody>();
+    [SerializeField] private List<Transform> partList = new List<Transform>();
 
     private Action OnPartLost;
 
@@ -21,7 +22,7 @@ public class PlatformController : MonoBehaviour
 
     private void Start()
     {
-        InitRbList();
+        InitPartList();
     }
 
     private void FixedUpdate()
@@ -33,14 +34,14 @@ public class PlatformController : MonoBehaviour
 
     #endregion
 
-    #region InitRbList
+    #region InitPartList
 
-    private void InitRbList()
+    private void InitPartList()
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            var rb = transform.GetChild(i).GetComponent<Rigidbody>();
-            rbList.Add(rb);
+            var part = transform.GetChild(i).transform;
+            partList.Add(part);
         }
     }
 
@@ -64,11 +65,14 @@ public class PlatformController : MonoBehaviour
     
     private void LosePart()
     {
-        var rb = rbList[0];
-        rb.isKinematic = false;
-        rb.useGravity = true;
-        rbList.Remove(rb);
-        Destroy(rb.gameObject, 5);
+        var part = partList[0];
+        var targetY = part.position.y - 10;
+        part.DOMoveY(targetY, 1).OnComplete((() =>
+        {
+            partList.Remove(part);
+            Destroy(part.gameObject, 1);
+        }));
+
     }
 
     #endregion

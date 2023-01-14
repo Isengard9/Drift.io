@@ -5,6 +5,7 @@ namespace Game.Scripts.Vehicle
 {
     public class PlayerVehicle : Vehicle
     {
+        
         #region Variables
 
         [SerializeField] private VariableJoystick joystick;
@@ -13,7 +14,7 @@ namespace Game.Scripts.Vehicle
 
         #endregion
 
-        #region On Init
+        #region Init
 
         protected override void OnInit()
         {
@@ -77,15 +78,6 @@ namespace Game.Scripts.Vehicle
             transform.rotation = Quaternion.Slerp(transform.rotation,
                 Quaternion.Euler(0, Mathf.Atan2(horizontal, vertical) * Mathf.Rad2Deg, 0),
                 Time.deltaTime * rotationSpeed);
-        }
-
-
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.transform.CompareTag("Ground"))
-            {
-                isForwardMoving = true;
-            }
         }
 
         #endregion

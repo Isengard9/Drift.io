@@ -5,12 +5,20 @@ namespace Game.Scripts.ControllerContainer
 {
     public class ControllerContainer: MonoBehaviour
     {
+        
+        #region Variables
+
         private static ControllerContainer instance;
         public static ControllerContainer Instance => instance;
 
         private List<Vehicle.Vehicle> vehicles = new List<Vehicle.Vehicle>();
         public List<Vehicle.Vehicle> Vehicles => vehicles;
 
+        
+
+        #endregion
+
+        #region MonoBehaviour
 
         private void Awake()
         {
@@ -21,6 +29,10 @@ namespace Game.Scripts.ControllerContainer
             instance = this;
         }
 
+        #endregion
+
+        #region AddVehicle
+
         public void AddVehicle(Vehicle.Vehicle vehicle)
         {
             if(vehicles.Contains(vehicle))
@@ -28,5 +40,8 @@ namespace Game.Scripts.ControllerContainer
             
             vehicles.Add(vehicle);
         }
+
+        #endregion
+        
     }
 }

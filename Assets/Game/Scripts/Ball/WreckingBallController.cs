@@ -5,6 +5,9 @@ namespace Game.Scripts.Ball
 {
     public class WreckingBallController : MonoBehaviour
     {
+
+        #region Variables
+
         [SerializeField] private Vehicle.Vehicle myVehicle;
 
         [Header("Joint")] [SerializeField] public HingeJoint joint;
@@ -16,6 +19,11 @@ namespace Game.Scripts.Ball
         [SerializeField] private float spinTime = 5;
         [SerializeField] private Rigidbody wreckingRigidbody;
         [Header("Renderer")] [SerializeField] private LineRenderer lr;
+        
+
+        #endregion
+
+        #region MonoBehaviour
 
         private void Update()
         {
@@ -48,6 +56,20 @@ namespace Game.Scripts.Ball
             lr.SetPosition(1, transform.position);
         }
 
+        private void OnCollisionEnter(Collision collision)
+        {
+            var vehicle = collision.transform.GetComponent<Vehicle.Vehicle>();
+
+            if (vehicle is not null)
+            {
+                ForceVehicle(vehicle);
+            }
+        }
+        
+        #endregion
+        
+        #region EnemyEffect
+
         public void EnemyEffect(bool useEffect)
         {
             joint.useMotor = useEffect;
@@ -60,6 +82,12 @@ namespace Game.Scripts.Ball
             joint.motor = m;
 
         }
+        
+
+        #endregion
+
+        #region SpinProcess
+
         public void SpinStart()
         {
             if (isSpinning)
@@ -80,15 +108,9 @@ namespace Game.Scripts.Ball
             lr.enabled = true;
         }
 
-        private void OnCollisionEnter(Collision collision)
-        {
-            var vehicle = collision.transform.GetComponent<Vehicle.Vehicle>();
-
-            if (vehicle is not null)
-            {
-               ForceVehicle(vehicle);
-            }
-        }
+        #endregion
+        
+        #region ForceVehicle
 
         private void ForceVehicle(Vehicle.Vehicle vehicle)
         {
@@ -104,9 +126,15 @@ namespace Game.Scripts.Ball
             //     ForceMode.Impulse);
         }
 
+        #endregion
+        
+        #region Convert
+
         public float Convert(float value, float min1, float max1, float min2, float max2)
         {
             return (value - min1) * (max2 - min2) / (max1 - min1) + min2;
         }
+
+        #endregion
     }
 }

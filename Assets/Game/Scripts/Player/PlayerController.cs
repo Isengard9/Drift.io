@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 
     #region Variables
 
-    public BallController ballController;
     public WreckingBallController wreckingBallController;
 
     #endregion

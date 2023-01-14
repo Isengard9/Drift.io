@@ -12,17 +12,14 @@ namespace Game.Scripts.Vehicle
         private Transform target;
         public Transform Target => target;
 
-        [SerializeField] private float minDistanceFromTarget = 3;
-
-        
-        [SerializeField] private float rotateSpeed = 5;
         [SerializeField] private WreckingBallController wreckingBallController;
+
+        [SerializeField] private float minDistanceFromTarget = 3;
+        [SerializeField] private float rotateSpeed = 5;
+        
         #endregion
 
-        protected override void OnInit()
-        {
-        }
-
+        #region Target
 
         private void FindTarget()
         {
@@ -48,15 +45,33 @@ namespace Game.Scripts.Vehicle
                 target = newTarget.transform;
             }
         }
-
-        #region DestroyAction
-
-        public void DestroyAction()
+        
+        private void ControlCheckTarget()
         {
+            if (target is null)
+            {
+                FindTarget();
+                return;
+            }
+            
+            var distance = Vector3.Distance(target.position, transform.position);
+
+            if (distance < minDistanceFromTarget)
+            {
+                FindTarget();
+            }
+
         }
 
         #endregion
 
+        #region MonoBehaviour
+
+        protected override void OnInit()
+        {
+            
+        }
+        
         private float waitToRotate = 1;
         private bool isRotatingTime = false;
         private void Update()
@@ -82,26 +97,10 @@ namespace Game.Scripts.Vehicle
                 waitToRotate = 1;
             }
             Move();
-         }
-
-        private void ControlCheckTarget()
-        {
-            if (target is null)
-            {
-                FindTarget();
-                return;
-            }
-            
-            var distance = Vector3.Distance(target.position, transform.position);
-
-            if (distance < minDistanceFromTarget)
-            {
-                FindTarget();
-            }
-
         }
 
-
+        #endregion
+        
         #region Physics
 
         protected override void Move()
@@ -147,16 +146,7 @@ namespace Game.Scripts.Vehicle
             var targetRotation = Quaternion.LookRotation(targetPos - transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
         }
-        
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.transform.CompareTag("Ground"))
-            {
-                isForwardMoving = true;
-            }
-        }
 
-        
 
         #endregion
     }
