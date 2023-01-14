@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 using Game.Scripts.Ball;
 using UnityEngine;
+using Quaternion = UnityEngine.Quaternion;
+using Random = UnityEngine.Random;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Game.Scripts.Vehicle
 {
@@ -48,7 +52,7 @@ namespace Game.Scripts.Vehicle
         
         private void ControlCheckTarget()
         {
-            if (target is null)
+            if (target == null)
             {
                 FindTarget();
                 return;
@@ -74,28 +78,44 @@ namespace Game.Scripts.Vehicle
         
         private float waitToRotate = 1;
         private bool isRotatingTime = false;
+        private bool randomRotateActive = false;
+        private Vector3 randomRotationPoint = Vector3.zero;
         private void Update()
         {
-            if (!GameManager.IsGameStarted || GameManager.IsGameEnded) return;
+            if (!GameManager.IsGameStarted || GameManager.IsGameEnded)
+            {
+                vehicleRigidbody.velocity -= Vector3.up * Time.deltaTime * MoveSpeed;
+                return;
+            }
 
             if (waitToRotate > 0)
             {
                 if (isRotatingTime)
                 {
                     ControlCheckTarget();
-                    Rotate();
-                    
+
+                    if (randomRotateActive)
+                    {
+                        Rotate(randomRotationPoint);
+                    }
+                    else
+                    {
+                        Rotate(target.position);
+                    }
                     
                 }
                 wreckingBallController.EnemyEffect(isRotatingTime);
                 waitToRotate -= Time.deltaTime;
             }
-
+            
             else
             {
+                randomRotateActive = Random.value > 0.7f;
+                randomRotationPoint = (Vector3.forward + Vector3.right) * Random.Range(-10, 10);
                 isRotatingTime = !isRotatingTime;
                 waitToRotate = 1;
             }
+            
             Move();
         }
 
@@ -105,7 +125,6 @@ namespace Game.Scripts.Vehicle
 
         protected override void Move()
         {
-            
             
             if (!isForwardMoving)
             {
@@ -130,24 +149,18 @@ namespace Game.Scripts.Vehicle
                 vehicleRigidbody.velocity = Vector3.Lerp(vehicleRigidbody.velocity, forward * MoveSpeed, Time.deltaTime * MoveSpeed *20);
             }
             
-            // vehicleRigidbody.velocity = Vector3.Lerp(vehicleRigidbody.velocity, forward * MoveSpeed,
-            //     Time.deltaTime * 5);
         }
         
-        
-
-        protected override void Rotate()
+        protected override void Rotate(Vector3 targetPosition)
         {
             if(target is null)
                 return;
-            
-            var targetPos = target.position;
-            targetPos.y = transform.position.y;
-            var targetRotation = Quaternion.LookRotation(targetPos - transform.position);
+
+            targetPosition.y = transform.position.y;
+            var targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
         }
-
-
+        
         #endregion
     }
 }

@@ -27,7 +27,6 @@ public class PowerUpItem : MonoBehaviour, IDestroyable
     {
         if (other.transform.CompareTag("Ground"))
         {
-            //Debug.Log("kutu yere degdi");
             rb.isKinematic = true;
             ScaleDownParachute();
         }

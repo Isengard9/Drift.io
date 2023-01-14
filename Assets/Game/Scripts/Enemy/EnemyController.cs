@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game.Scripts.Ball;
+using Game.Scripts.ControllerContainer;
 using Game.Scripts.Interface;
 using Game.Scripts.Vehicle;
 using UnityEngine;
@@ -14,7 +15,8 @@ public class EnemyController : MonoBehaviour, IDestroyable
 
     [SerializeField] private WreckingBallController wreckingBallController;
     [SerializeField] private EnemyVehicle enemyVehicle;
-    
+
+    [SerializeField] private GameObject rootEnemy;
     [SerializeField] private MeshRenderer carMesh;
     [SerializeField] private SkinnedMeshRenderer driverMesh;
     
@@ -53,6 +55,13 @@ public class EnemyController : MonoBehaviour, IDestroyable
 
     private void OnTriggerEnter(Collider other)
     {
+        
+        if (other.transform.CompareTag("Item"))
+        {
+            wreckingBallController.SpinStart();
+            other.GetComponent<PowerUpItem>().DestroyAction();
+        }
+        
         if (other.transform.CompareTag("Space"))
         {
             DestroyAction();
@@ -73,7 +82,8 @@ public class EnemyController : MonoBehaviour, IDestroyable
 
     public void DestroyAction()
     {
-        Destroy(gameObject,0.1f);
+        ControllerContainer.Instance.RemoveVehicle(enemyVehicle);
+        Destroy(rootEnemy,0.1f);
     }
 
     #endregion

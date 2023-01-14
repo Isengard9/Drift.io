@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Game.Scripts.Ball
 {
@@ -19,7 +20,7 @@ namespace Game.Scripts.Ball
         [SerializeField] private float spinTime = 5;
         [SerializeField] private Rigidbody wreckingRigidbody;
         [Header("Renderer")] [SerializeField] private LineRenderer lr;
-        
+        [SerializeField] private TrailRenderer tr;
 
         #endregion
 
@@ -72,12 +73,15 @@ namespace Game.Scripts.Ball
 
         public void EnemyEffect(bool useEffect)
         {
+            if(isSpinning)
+                return;
+            
             joint.useMotor = useEffect;
 
             var m = joint.motor;
             
-            m.targetVelocity = useEffect ? 2 : 5000;
-            m.force = useEffect ? 2 : 5000;
+            m.targetVelocity = useEffect ? Random.Range(-2,2) : 5000;
+            m.force = useEffect ? Random.Range(-2,2)  : 5000;
             
             joint.motor = m;
 
@@ -97,6 +101,7 @@ namespace Game.Scripts.Ball
             joint.useLimits = false;
             joint.useMotor = true;
             lr.enabled = false;
+            tr.enabled = true;
             Invoke(nameof(SpinStop), spinTime);
         }
 
@@ -106,6 +111,7 @@ namespace Game.Scripts.Ball
             joint.useLimits = true;
             joint.useMotor = false;
             lr.enabled = true;
+            tr.enabled = false;
         }
 
         #endregion
@@ -114,16 +120,11 @@ namespace Game.Scripts.Ball
 
         private void ForceVehicle(Vehicle.Vehicle vehicle)
         {
-            
             var forceDirection = (vehicle.transform.position - transform.position).normalized * 10;
             forceDirection.y = 10;
             vehicle.forwardDirection = forceDirection;
             vehicle.isForwardMoving = false;
 
-
-            // vehicle.vehicleRigidbody.AddForce(
-            //     (forceDirection.normalized * wreckingRigidbody.velocity.magnitude * 10 * vehicle.vehicleRigidbody.mass) + Vector3.up * 100 * vehicle.vehicleRigidbody.mass,
-            //     ForceMode.Impulse);
         }
 
         #endregion

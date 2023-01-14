@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Scripts.Manager.General;
 using Game.Scripts.Vehicle;
 using UnityEngine;
 
@@ -28,6 +29,11 @@ public class PlayerCollider : MonoBehaviour
         {
             playerController.wreckingBallController.SpinStart();
             other.GetComponent<PowerUpItem>().DestroyAction();
+        }
+
+        if (other.transform.CompareTag("Space"))
+        {
+            ManagerContainer.Instance.UIManager.OnLevelFailed();
         }
     }
     

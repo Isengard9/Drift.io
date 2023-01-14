@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Game.Scripts.Manager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Manager
 {
@@ -12,8 +13,7 @@ public class GameManager : Manager
     public static bool IsGameEnded = false;
 
     #endregion
-
-
+    
     #region On Started | Destroyed
 
     public override void OnStarted()
@@ -27,8 +27,8 @@ public class GameManager : Manager
     }
 
     #endregion
-    
-    
+
+    #region Game
 
     public void StartGame()
     {
@@ -46,14 +46,16 @@ public class GameManager : Manager
         IsGameStarted = false;
         IsGameEnded = false;
     }
-
+    
     public void RestartGame()
     {
-        //TODO: Restart game functions
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void NextLevel()
     {
-        //TODO: Next level game function
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    #endregion
 }

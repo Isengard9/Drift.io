@@ -6,6 +6,9 @@ namespace Game.Scripts.Manager.General
 {
     public class ManagerContainer : MonoBehaviour
     {
+        
+        #region Variables
+
         private static ManagerContainer instance;
         public static ManagerContainer Instance=>instance;
 
@@ -15,13 +18,13 @@ namespace Game.Scripts.Manager.General
 
         [SerializeField] private UIManager uiManager;
         public UIManager UIManager => uiManager;
-        
+
+        #endregion
+
+        #region MonoBehaviour
+
         private void Awake()
         {
-            if (instance is not null)
-            {
-                Destroy(instance.gameObject);
-            }
             instance = this;
         }
 
@@ -34,7 +37,10 @@ namespace Game.Scripts.Manager.General
         {
             DestroyManagers();
         }
+
+        #endregion
         
+        #region ManagerProcess
 
         private void StartManagers()
         {
@@ -47,5 +53,7 @@ namespace Game.Scripts.Manager.General
             gameManager.OnDestroyed();
             uiManager.OnDestroyed();
         }
+
+        #endregion
     }
 }

@@ -39,7 +39,7 @@ namespace Game.Scripts.Vehicle
         protected abstract void OnInit();
 
         protected abstract void Move();
-        protected abstract void Rotate();
+        protected abstract void Rotate(Vector3 targetPosition);
         
 
         #endregion

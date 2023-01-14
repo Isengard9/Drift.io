@@ -26,11 +26,15 @@ namespace Game.Scripts.Vehicle
 
         private void Update()
         {
-            if (!GameManager.IsGameStarted || GameManager.IsGameEnded) return;
+            if (!GameManager.IsGameStarted || GameManager.IsGameEnded)
+            {
+                vehicleRigidbody.velocity -= Vector3.up * Time.deltaTime * MoveSpeed;
+                return;
+            }
 
             if (Input.GetMouseButton(0))
             {
-                Rotate();
+                Rotate(Vector3.zero);
             }
 
             Move();
@@ -69,7 +73,7 @@ namespace Game.Scripts.Vehicle
             }
         }
 
-        protected override void Rotate()
+        protected override void Rotate(Vector3 targetPosition)
         {
             var horizontal = joystick.Horizontal;
             var vertical = joystick.Vertical;

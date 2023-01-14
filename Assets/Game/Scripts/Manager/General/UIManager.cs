@@ -20,6 +20,24 @@ namespace Game.Scripts.Manager.General
 
         #endregion
 
+        #region OnLevel
+
+        public void OnLevelSuccess()
+        {
+            ManagerContainer.Instance.GameManager.EndGame();
+            winPanel.SetActive(true);
+            gamePanel.SetActive(false);
+        }
+    
+        public void OnLevelFailed()
+        {
+            ManagerContainer.Instance.GameManager.EndGame();
+            lostPanel.SetActive(true);
+            gamePanel.SetActive(false);
+        }
+
+        #endregion
+
         #region Button Function
 
         private void StartButtonClicked()
@@ -41,8 +59,7 @@ namespace Game.Scripts.Manager.General
         }
 
         #endregion
-
-
+        
         #region On Started | Destroyed
 
         public override void OnStarted()
@@ -56,8 +73,7 @@ namespace Game.Scripts.Manager.General
         }
 
         #endregion
-
-
+        
         #region Add | Remove Listeners
 
         protected override void AddListener()
@@ -65,16 +81,16 @@ namespace Game.Scripts.Manager.General
             base.AddListener();
 
             StartButton.onClick.AddListener(StartButtonClicked);
-            // NextButton.onClick.AddListener(NextLevelButtonClicked);
-            // RestartButton.onClick.AddListener(RestartButtonClicked);
+             NextButton.onClick.AddListener(NextLevelButtonClicked);
+             RestartButton.onClick.AddListener(RestartButtonClicked);
         }
 
         protected override void RemoveListener()
         {
             base.RemoveListener();
             StartButton.onClick.RemoveListener(StartButtonClicked);
-            // NextButton.onClick.RemoveListener(NextLevelButtonClicked);
-            // RestartButton.onClick.RemoveListener(RestartButtonClicked);
+             NextButton.onClick.RemoveListener(NextLevelButtonClicked);
+             RestartButton.onClick.RemoveListener(RestartButtonClicked);
         }
 
         #endregion

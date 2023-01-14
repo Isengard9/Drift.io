@@ -10,15 +10,8 @@ public class BallTransformController : MonoBehaviour
     
     #region Variables
 
-    //private float defaultSmoothSpeed;
-    //public LineRenderer Rope;
-    //public Transform BallTransform;
-
     [SerializeField] private List<Transform> ballList = new List<Transform>();
 
-    //private Vector3 offsetTargetPosition;
-
-    //private bool isRotating = false;
     #endregion
 
     #region MonoBehaviour
@@ -37,7 +30,6 @@ public class BallTransformController : MonoBehaviour
         var _index = Random.Range(0, ballList.Count);
         
         ballList[_index].gameObject.SetActive(true);
-        //BallTransform = ballList[_index];
     }
 
     #endregion
