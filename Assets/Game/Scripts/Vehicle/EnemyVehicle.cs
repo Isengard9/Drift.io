@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Game.Scripts.Ball;
 using UnityEngine;
 
 namespace Game.Scripts.Vehicle
@@ -13,8 +14,9 @@ namespace Game.Scripts.Vehicle
 
         [SerializeField] private float minDistanceFromTarget = 3;
 
-        [SerializeField] private float movementSpeed = 2;
+        
         [SerializeField] private float rotateSpeed = 5;
+        [SerializeField] private WreckingBallController wreckingBallController;
         #endregion
 
         protected override void OnInit()
@@ -24,10 +26,10 @@ namespace Game.Scripts.Vehicle
 
         private void FindTarget()
         {
-            target = ControllerContainer.ControllerContainer.Instance.Vehicles.Find(x => x != this
-                && Vector3.Distance(transform.position, x.transform.position) > minDistanceFromTarget).transform;
+            var newTarget = ControllerContainer.ControllerContainer.Instance.Vehicles.Find(x => x != this
+                && Vector3.Distance(transform.position, x.transform.position) > minDistanceFromTarget);
 
-            if (target == null)
+            if(newTarget == null)
             {
                 var enemyCount = ControllerContainer.ControllerContainer.Instance.Vehicles.Count;
                 
@@ -40,6 +42,10 @@ namespace Game.Scripts.Vehicle
                 {
                     target = ControllerContainer.ControllerContainer.Instance.Vehicles.Find(x => x != this).transform;
                 }
+            }
+            else
+            {
+                target = newTarget.transform;
             }
         }
 
@@ -63,8 +69,10 @@ namespace Game.Scripts.Vehicle
                 {
                     ControlCheckTarget();
                     Rotate();
+                    
+                    
                 }
-
+                wreckingBallController.EnemyEffect(isRotatingTime);
                 waitToRotate -= Time.deltaTime;
             }
 
@@ -74,9 +82,7 @@ namespace Game.Scripts.Vehicle
                 waitToRotate = 1;
             }
             Move();
-            
-            
-        }
+         }
 
         private void ControlCheckTarget()
         {
@@ -100,8 +106,36 @@ namespace Game.Scripts.Vehicle
 
         protected override void Move()
         {
-            vehicleRigidbody.position += transform.forward * Time.deltaTime * movementSpeed;
+            
+            
+            if (!isForwardMoving)
+            {
+                forwardDirection.y -= Time.deltaTime * MoveSpeed;
+                
+                vehicleRigidbody.velocity =
+                    Vector3.Lerp(vehicleRigidbody.velocity, forwardDirection, Time.deltaTime * MoveSpeed *2);
+                
+                if (Vector3.Distance(vehicleRigidbody.velocity, forwardDirection) < 0.2f)
+                    isForwardMoving = true;
+                
+            }
+            else
+            {
+                var forward = transform.forward;
+                forward.y = -20 * Time.deltaTime;
+                if (transform.position.y > 0.2f)
+                {
+                    forward.x = forward.z = 0;
+                    forward.y = -1;
+                }
+                vehicleRigidbody.velocity = Vector3.Lerp(vehicleRigidbody.velocity, forward * MoveSpeed, Time.deltaTime * MoveSpeed *20);
+            }
+            
+            // vehicleRigidbody.velocity = Vector3.Lerp(vehicleRigidbody.velocity, forward * MoveSpeed,
+            //     Time.deltaTime * 5);
         }
+        
+        
 
         protected override void Rotate()
         {
@@ -109,9 +143,20 @@ namespace Game.Scripts.Vehicle
                 return;
             
             var targetPos = target.position;
+            targetPos.y = transform.position.y;
             var targetRotation = Quaternion.LookRotation(targetPos - transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
         }
+        
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.transform.CompareTag("Ground"))
+            {
+                isForwardMoving = true;
+            }
+        }
+
+        
 
         #endregion
     }

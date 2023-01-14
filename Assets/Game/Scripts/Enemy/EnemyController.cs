@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Scripts.Ball;
 using Game.Scripts.Interface;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -10,7 +11,7 @@ public class EnemyController : MonoBehaviour, IDestroyable
 
     #region Variables
 
-    public BallController ballController;
+    [SerializeField] private WreckingBallController wreckingBallController;
 
     [SerializeField] private MeshRenderer carMesh;
     [SerializeField] private SkinnedMeshRenderer driverMesh;
