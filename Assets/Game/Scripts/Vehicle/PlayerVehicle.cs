@@ -24,11 +24,11 @@ namespace Game.Scripts.Vehicle
 
         #region Monobehaviour
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (!GameManager.IsGameStarted || GameManager.IsGameEnded)
             {
-                vehicleRigidbody.velocity -= Vector3.up * Time.deltaTime * MoveSpeed;
+                vehicleRigidbody.velocity -= Vector3.up * Time.fixedDeltaTime * MoveSpeed;
                 return;
             }
 
@@ -48,19 +48,19 @@ namespace Game.Scripts.Vehicle
         {
             if (!isForwardMoving)
             {
-                forwardDirection.y -= Time.deltaTime * MoveSpeed;
+                forwardDirection.y -= Time.fixedDeltaTime * MoveSpeed*2;
                 vehicleRigidbody.velocity =
-                    Vector3.Lerp(vehicleRigidbody.velocity, forwardDirection, Time.deltaTime * MoveSpeed * 2);
+                    Vector3.Lerp(vehicleRigidbody.velocity, forwardDirection, Time.fixedDeltaTime * MoveSpeed * 2);
 
-                if (Vector3.Distance(vehicleRigidbody.velocity, forwardDirection) < 0.2f)
+                if (Vector3.Distance(vehicleRigidbody.velocity, forwardDirection) < 0.1f)
                     isForwardMoving = true;
             }
             else
             {
-                MoveSpeed += Input.GetMouseButton(0) ? Time.deltaTime : -Time.deltaTime;
+                MoveSpeed += Input.GetMouseButton(0) ? Time.fixedDeltaTime : -Time.fixedDeltaTime;
                 MoveSpeed = Mathf.Clamp(MoveSpeed, MinMaxMoveSpeed.x, MinMaxMoveSpeed.y);
                 var forward = transform.forward;
-                forward.y = -20 * Time.deltaTime;
+                forward.y = -20 * Time.fixedDeltaTime;
 
                 if (transform.position.y > 0.2f)
                 {
@@ -69,7 +69,7 @@ namespace Game.Scripts.Vehicle
                 }
 
                 vehicleRigidbody.velocity = Vector3.Lerp(vehicleRigidbody.velocity, forward * MoveSpeed,
-                    Time.deltaTime * MoveSpeed * 20);
+                    Time.fixedDeltaTime * MoveSpeed * 20);
             }
         }
 
@@ -81,7 +81,7 @@ namespace Game.Scripts.Vehicle
 
             transform.rotation = Quaternion.Slerp(transform.rotation,
                 Quaternion.Euler(0, Mathf.Atan2(horizontal, vertical) * Mathf.Rad2Deg, 0),
-                Time.deltaTime * rotationSpeed);
+                Time.fixedDeltaTime * rotationSpeed);
         }
 
         #endregion

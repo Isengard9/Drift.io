@@ -80,11 +80,11 @@ namespace Game.Scripts.Vehicle
         private bool isRotatingTime = false;
         private bool randomRotateActive = false;
         private Vector3 randomRotationPoint = Vector3.zero;
-        private void Update()
+        private void FixedUpdate()
         {
             if (!GameManager.IsGameStarted || GameManager.IsGameEnded)
             {
-                vehicleRigidbody.velocity -= Vector3.up * Time.deltaTime * MoveSpeed;
+                vehicleRigidbody.velocity -= Vector3.up * Time.fixedDeltaTime * MoveSpeed;
                 return;
             }
 
@@ -105,7 +105,7 @@ namespace Game.Scripts.Vehicle
                     
                 }
                 wreckingBallController.EnemyEffect(isRotatingTime);
-                waitToRotate -= Time.deltaTime;
+                waitToRotate -= Time.fixedDeltaTime;
             }
             
             else
@@ -128,25 +128,25 @@ namespace Game.Scripts.Vehicle
             
             if (!isForwardMoving)
             {
-                forwardDirection.y -= Time.deltaTime * MoveSpeed;
+                forwardDirection.y -= Time.fixedDeltaTime * MoveSpeed*2;
                 
                 vehicleRigidbody.velocity =
-                    Vector3.Lerp(vehicleRigidbody.velocity, forwardDirection, Time.deltaTime * MoveSpeed *2);
+                    Vector3.Lerp(vehicleRigidbody.velocity, forwardDirection, Time.fixedDeltaTime * MoveSpeed * 2);
                 
-                if (Vector3.Distance(vehicleRigidbody.velocity, forwardDirection) < 0.2f)
+                if (Vector3.Distance(vehicleRigidbody.velocity, forwardDirection) < 0.1f)
                     isForwardMoving = true;
                 
             }
             else
             {
                 var forward = transform.forward;
-                forward.y = -20 * Time.deltaTime;
+                forward.y = -20 * Time.fixedDeltaTime;
                 if (transform.position.y > 0.2f)
                 {
                     forward.x = forward.z = 0;
                     forward.y = -1;
                 }
-                vehicleRigidbody.velocity = Vector3.Lerp(vehicleRigidbody.velocity, forward * MoveSpeed, Time.deltaTime * MoveSpeed *20);
+                vehicleRigidbody.velocity = Vector3.Lerp(vehicleRigidbody.velocity, forward * MoveSpeed, Time.fixedDeltaTime * MoveSpeed *20);
             }
             
         }
@@ -158,7 +158,7 @@ namespace Game.Scripts.Vehicle
 
             targetPosition.y = transform.position.y;
             var targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.fixedDeltaTime * rotateSpeed);
         }
         
         #endregion

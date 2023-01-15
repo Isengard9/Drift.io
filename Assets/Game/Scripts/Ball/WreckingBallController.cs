@@ -6,7 +6,6 @@ namespace Game.Scripts.Ball
 {
     public class WreckingBallController : MonoBehaviour
     {
-
         #region Variables
 
         [SerializeField] private Vehicle.Vehicle myVehicle;
@@ -32,7 +31,8 @@ namespace Game.Scripts.Ball
             {
                 joint.anchor = Vector3.Lerp(
                     joint.anchor,
-                    Vector3.forward * Convert(myVehicle.MoveSpeed, 5, 7, 2, 5),
+                    Vector3.forward * Convert(myVehicle.MoveSpeed, myVehicle.MinMaxMoveSpeed.x,
+                        myVehicle.MinMaxMoveSpeed.y, 2, 5),
                     Time.deltaTime * 2
                 );
                 joint.connectedAnchor = Vector3.Lerp(
@@ -66,27 +66,25 @@ namespace Game.Scripts.Ball
                 ForceVehicle(vehicle);
             }
         }
-        
+
         #endregion
-        
+
         #region EnemyEffect
 
         public void EnemyEffect(bool useEffect)
         {
-            if(isSpinning)
+            if (isSpinning)
                 return;
-            
+
             joint.useMotor = useEffect;
 
             var m = joint.motor;
-            
-            m.targetVelocity = useEffect ? Random.Range(-2,2) : 5000;
-            m.force = useEffect ? Random.Range(-2,2)  : 5000;
-            
-            joint.motor = m;
 
+            m.targetVelocity = useEffect ? Random.Range(-2, 2) : 5000;
+            m.force = useEffect ? Random.Range(-2, 2) : 5000;
+
+            joint.motor = m;
         }
-        
 
         #endregion
 
@@ -115,20 +113,20 @@ namespace Game.Scripts.Ball
         }
 
         #endregion
-        
+
         #region ForceVehicle
 
         private void ForceVehicle(Vehicle.Vehicle vehicle)
         {
-            var forceDirection = (vehicle.transform.position - transform.position).normalized * 10;
-            forceDirection.y = 10;
+            var forceDirection = (vehicle.transform.position - transform.position).normalized * 30 ;
+            
+            forceDirection.y = 20;
             vehicle.forwardDirection = forceDirection;
             vehicle.isForwardMoving = false;
-
         }
 
         #endregion
-        
+
         #region Convert
 
         public float Convert(float value, float min1, float max1, float min2, float max2)

@@ -3140,8 +3140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vehicleRigidbody: {fileID: 7114289008139235783}
-  MoveSpeed: 5
-  MinMaxMoveSpeed: {x: 10, y: 10}
+  MoveSpeed: 21
+  MinMaxMoveSpeed: {x: 20, y: 22}
   forwardDirection: {x: 0, y: 0, z: 0}
   isForwardMoving: 1
   wreckingBallController: {fileID: 6187107235041185128}
